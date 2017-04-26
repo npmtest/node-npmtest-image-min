@@ -1,6 +1,6 @@
 # npmtest-image-min
 
-#### basic test coverage for  image-min (v0.3.2)  [![npm package](https://img.shields.io/npm/v/npmtest-image-min.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-image-min) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-image-min.svg)](https://travis-ci.org/npmtest/node-npmtest-image-min)
+#### basic test coverage for  [image-min (v0.3.2)](https://github.com/kevva/image-min)  [![npm package](https://img.shields.io/npm/v/npmtest-image-min.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-image-min) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-image-min.svg)](https://travis-ci.org/npmtest/node-npmtest-image-min)
 
 #### Minify GIF, JPEG and PNG images
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-image-min/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-image-min/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-image-min/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-image-min/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-image-min/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-image-min/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-image-min/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-image-min/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-image-min/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-image-min/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-image-min/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-image-min/build/coverage.html/index.html)
 
@@ -35,45 +35,71 @@
 ```json
 
 {
-    "name": "image-min",
-    "version": "0.3.2",
-    "description": "Minify GIF, JPEG and PNG images",
-    "license": "MIT",
-    "repository": "kevva/image-min",
     "author": {
         "name": "Kevin Mårtensson",
         "url": "https://github.com/kevva"
     },
+    "bugs": {
+        "url": "https://github.com/kevva/image-min/issues"
+    },
+    "dependencies": {
+        "gifsicle": "^0.1.0",
+        "jpegtran-bin": "^0.2.0",
+        "multipipe": "0.0.2",
+        "optipng-bin": "^0.3.2",
+        "pngquant-bin": "^0.1.6",
+        "through2": "^0.4.0",
+        "win-spawn": "^2.0.0"
+    },
+    "description": "Minify GIF, JPEG and PNG images",
+    "devDependencies": {
+        "mocha": "^1.17.1",
+        "rimraf": "^2.2.6"
+    },
+    "directories": {},
+    "dist": {
+        "shasum": "b669a4d31f29d06f84537df062b7edc25b73fa16",
+        "tarball": "https://registry.npmjs.org/image-min/-/image-min-0.3.2.tgz"
+    },
     "engines": {
         "node": ">=0.10.0"
-    },
-    "scripts": {
-        "test": "mocha --reporter list --timeout 50000"
     },
     "files": [
         "index.js"
     ],
+    "gitHead": "c0ea01372441fb8924e9f5fd71238595a55de2d9",
+    "homepage": "https://github.com/kevva/image-min",
     "keywords": [
         "extract",
         "tar",
         "tar.gz",
         "zip"
     ],
-    "dependencies": {
-        "multipipe": "0.0.2",
-        "through2": "^0.4.0",
-        "win-spawn": "^2.0.0"
-    },
-    "devDependencies": {
-        "mocha": "^1.17.1",
-        "rimraf": "^2.2.6"
-    },
+    "license": "MIT",
+    "maintainers": [
+        {
+            "name": "kevva"
+        },
+        {
+            "name": "sindresorhus"
+        }
+    ],
+    "name": "image-min",
     "optionalDependencies": {
         "gifsicle": "^0.1.0",
         "jpegtran-bin": "^0.2.0",
         "optipng-bin": "^0.3.2",
         "pngquant-bin": "^0.1.6"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/kevva/image-min.git"
+    },
+    "scripts": {
+        "test": "mocha --reporter list --timeout 50000"
+    },
+    "version": "0.3.2",
+    "bin": {}
 }
 ```
 
